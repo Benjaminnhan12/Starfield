@@ -20,6 +20,13 @@ void draw()
 	}
 }	
 
+class OddballParticle extends Particle
+{
+	OddballParticle(int x, int y)
+	{
+
+	}
+}
 class Particle
 {
 	double X,Y,Angle,Speed;
@@ -29,13 +36,13 @@ class Particle
 	{
 		X = x;
 		Y = y;
-		Speed = (Math.random()*11)+3;
+		Speed = (Math.random()*11)+2;
 		Angle = Math.random()*360+1;
 		Color = color((int)(Math.random()*255)+1,(int)(Math.random()*255)+1,(int)(Math.random()*255)+1);
 	}
 	void move()
 	{
-		X = X + Math.cos(Angle)*Speed;
+		X = X + Math.cos(Angle)*Speed + ;
 		Y = Y + Math.sin(Angle)*Speed;
 	}
 	void show()
